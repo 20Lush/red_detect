@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/red_detect/NodeTools.cpp
+chrono
+-
+memory
+-
+string
+-
+rclcpp/rclcpp.hpp
+../include/red_detect/rclcpp/rclcpp.hpp
+std_msgs/msg/string.hpp
+../include/red_detect/std_msgs/msg/string.hpp
+
+/home/zach/ros2_ws/src/red_detect/src/subscriber_example.cpp
+NodeTools.cpp
+/home/zach/ros2_ws/src/red_detect/src/NodeTools.cpp
+

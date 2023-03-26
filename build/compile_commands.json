@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/zach/ros2_ws/src/red_detect/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++   -I\"/home/zach/ros2_ws/src/red_detect/&{OpenCV_INCLUDE_DIRS}\" -I/home/zach/ros2_ws/src/red_detect/include/red_detect -I/home/zach/ros2_ws/src/red_detect/include -I/opt/ros/eloquent/include  -O3 -DNDEBUG   -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/ArrayPublisherExample.dir/src/arrayPublisher_example.cpp.o -c /home/zach/ros2_ws/src/red_detect/src/arrayPublisher_example.cpp",
+  "file": "/home/zach/ros2_ws/src/red_detect/src/arrayPublisher_example.cpp"
+},
+{
+  "directory": "/home/zach/ros2_ws/src/red_detect/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++   -I\"/home/zach/ros2_ws/src/red_detect/&{OpenCV_INCLUDE_DIRS}\" -I/home/zach/ros2_ws/src/red_detect/include/red_detect -I/home/zach/ros2_ws/src/red_detect/include -I/opt/ros/eloquent/include  -O3 -DNDEBUG   -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/NodeTools.dir/include/red_detect/NodeTools.cpp.o -c /home/zach/ros2_ws/src/red_detect/include/red_detect/NodeTools.cpp",
+  "file": "/home/zach/ros2_ws/src/red_detect/include/red_detect/NodeTools.cpp"
+},
+{
+  "directory": "/home/zach/ros2_ws/src/red_detect/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++   -I\"/home/zach/ros2_ws/src/red_detect/&{OpenCV_INCLUDE_DIRS}\" -I/home/zach/ros2_ws/src/red_detect/include/red_detect -I/home/zach/ros2_ws/src/red_detect/include -I/opt/ros/eloquent/include  -O3 -DNDEBUG   -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/ArraySubscriberExample.dir/src/arraySubscriber_example.cpp.o -c /home/zach/ros2_ws/src/red_detect/src/arraySubscriber_example.cpp",
+  "file": "/home/zach/ros2_ws/src/red_detect/src/arraySubscriber_example.cpp"
+}
+]

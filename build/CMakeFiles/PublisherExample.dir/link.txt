@@ -1,0 +1,1 @@
+/usr/bin/aarch64-linux-gnu-g++  -O3 -DNDEBUG   CMakeFiles/PublisherExample.dir/src/publisher_example.cpp.o  -o PublisherExample  -L/usr/local/cuda/lib64 
