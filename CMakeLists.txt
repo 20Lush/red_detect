@@ -29,18 +29,26 @@ include_directories(include)
 
 add_executable( ArrayPublisherExample src/arrayPublisher_example.cpp)
 add_executable( ArraySubscriberExample src/arraySubscriber_example.cpp)
+add_executable ( cudaCV src/cuda_cv.cpp)
+
 add_library( NodeTools include/red_detect/NodeTools.cpp)
+add_library( Diagnostics include/red_detect/Diagnostics.cpp)
 
 #target_link_libraries( RedDetect ${OpenCV_LIBS} )
 
 ament_target_dependencies( ArrayPublisherExample rclcpp std_msgs )
 ament_target_dependencies( ArraySubscriberExample rclcpp std_msgs )
+ament_target_dependencies( cudaCV rclcpp  std_msgs OpenCV )
+
 ament_target_dependencies( NodeTools rclcpp std_msgs )
+ament_target_dependencies( Diagnostics rclcpp std_msgs )
 
 install(TARGETS
   ArrayPublisherExample
   ArraySubscriberExample
   NodeTools
+  Diagnostics
+  cudaCV
   DESTINATION lib/${PROJECT_NAME}
   )
 
