@@ -225,5 +225,5 @@ Project Link: [https://github.com/20Lush/red_detect](https://github.com/20Lush/r
 [product-screenshot]: images/screenshot.png
 [python-shield]: https://img.shields.io/badge/-Python-black?logo=Python&style=social
 [python-url]: https://www.python.org/
-[cplusplus-shield]: https://img.shields.io/badge/-c++-black?logo=c%2B%2B&style=social
+[cplusplus-shield]: https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white
 [cplusplus-url]: https://isocpp.org/
