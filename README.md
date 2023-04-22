@@ -93,8 +93,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Python][Python]][Python-url]
-* [![C++][C++]][cplusplus-url]
+* [![Python][python-shield]][python-url]
+* [![C++][cplusplus-shield]][cplusplus-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
