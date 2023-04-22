@@ -221,7 +221,7 @@ Project Link: [https://github.com/20Lush/red_detect](https://github.com/20Lush/r
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/ztjohnson
+[linkedin-url]: https://linkedin.com/in/zt-johnson
 [product-screenshot]: images/screenshot.png
 [python-shield]: https://img.shields.io/badge/-Python-black?logo=Python&style=social
 [python-url]: https://www.python.org/
