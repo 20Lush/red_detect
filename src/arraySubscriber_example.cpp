@@ -8,7 +8,7 @@ std::string arrayToString(T (&arr)[S]){
   std::string str = "";
   for(unsigned int i = 0; i < S; i++){
     str += std::to_string(arr[i]);
-    if(i != S-1)
+    if(i != S)
       str += ",";
   }
 

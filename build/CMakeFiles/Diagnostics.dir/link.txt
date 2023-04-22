@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDiagnostics.a  CMakeFiles/Diagnostics.dir/include/red_detect/Diagnostics.cpp.o
+/usr/bin/ranlib libDiagnostics.a

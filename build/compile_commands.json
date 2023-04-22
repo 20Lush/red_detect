@@ -11,7 +11,17 @@
 },
 {
   "directory": "/home/zach/ros2_ws/src/red_detect/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++   -I\"/home/zach/ros2_ws/src/red_detect/&{OpenCV_INCLUDE_DIRS}\" -I/home/zach/ros2_ws/src/red_detect/include/red_detect -I/home/zach/ros2_ws/src/red_detect/include -I/opt/ros/eloquent/include  -O3 -DNDEBUG   -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/Diagnostics.dir/include/red_detect/Diagnostics.cpp.o -c /home/zach/ros2_ws/src/red_detect/include/red_detect/Diagnostics.cpp",
+  "file": "/home/zach/ros2_ws/src/red_detect/include/red_detect/Diagnostics.cpp"
+},
+{
+  "directory": "/home/zach/ros2_ws/src/red_detect/build",
   "command": "/usr/bin/aarch64-linux-gnu-g++   -I\"/home/zach/ros2_ws/src/red_detect/&{OpenCV_INCLUDE_DIRS}\" -I/home/zach/ros2_ws/src/red_detect/include/red_detect -I/home/zach/ros2_ws/src/red_detect/include -I/opt/ros/eloquent/include  -O3 -DNDEBUG   -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/ArraySubscriberExample.dir/src/arraySubscriber_example.cpp.o -c /home/zach/ros2_ws/src/red_detect/src/arraySubscriber_example.cpp",
   "file": "/home/zach/ros2_ws/src/red_detect/src/arraySubscriber_example.cpp"
+},
+{
+  "directory": "/home/zach/ros2_ws/src/red_detect/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++   -I\"/home/zach/ros2_ws/src/red_detect/&{OpenCV_INCLUDE_DIRS}\" -I/home/zach/ros2_ws/src/red_detect/include/red_detect -I/home/zach/ros2_ws/src/red_detect/include -I/opt/ros/eloquent/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/cudaCV.dir/src/cuda_cv.cpp.o -c /home/zach/ros2_ws/src/red_detect/src/cuda_cv.cpp",
+  "file": "/home/zach/ros2_ws/src/red_detect/src/cuda_cv.cpp"
 }
 ]

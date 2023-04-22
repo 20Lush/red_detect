@@ -90,28 +90,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -134,6 +112,28 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,6 +166,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named red_detect_uninstall
+
+# Build rule for target.
+red_detect_uninstall: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 red_detect_uninstall
+.PHONY : red_detect_uninstall
+
+# fast build rule for target.
+red_detect_uninstall/fast:
+	$(MAKE) -f CMakeFiles/red_detect_uninstall.dir/build.make CMakeFiles/red_detect_uninstall.dir/build
+.PHONY : red_detect_uninstall/fast
 
 #=============================================================================
 # Target rules for targets named ArrayPublisherExample
@@ -207,6 +220,19 @@ NodeTools/fast:
 .PHONY : NodeTools/fast
 
 #=============================================================================
+# Target rules for targets named Diagnostics
+
+# Build rule for target.
+Diagnostics: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Diagnostics
+.PHONY : Diagnostics
+
+# fast build rule for target.
+Diagnostics/fast:
+	$(MAKE) -f CMakeFiles/Diagnostics.dir/build.make CMakeFiles/Diagnostics.dir/build
+.PHONY : Diagnostics/fast
+
+#=============================================================================
 # Target rules for targets named ArraySubscriberExample
 
 # Build rule for target.
@@ -220,17 +246,44 @@ ArraySubscriberExample/fast:
 .PHONY : ArraySubscriberExample/fast
 
 #=============================================================================
-# Target rules for targets named red_detect_uninstall
+# Target rules for targets named cudaCV
 
 # Build rule for target.
-red_detect_uninstall: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 red_detect_uninstall
-.PHONY : red_detect_uninstall
+cudaCV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cudaCV
+.PHONY : cudaCV
 
 # fast build rule for target.
-red_detect_uninstall/fast:
-	$(MAKE) -f CMakeFiles/red_detect_uninstall.dir/build.make CMakeFiles/red_detect_uninstall.dir/build
-.PHONY : red_detect_uninstall/fast
+cudaCV/fast:
+	$(MAKE) -f CMakeFiles/cudaCV.dir/build.make CMakeFiles/cudaCV.dir/build
+.PHONY : cudaCV/fast
+
+include/red_detect/Diagnostics.o: include/red_detect/Diagnostics.cpp.o
+
+.PHONY : include/red_detect/Diagnostics.o
+
+# target to build an object file
+include/red_detect/Diagnostics.cpp.o:
+	$(MAKE) -f CMakeFiles/Diagnostics.dir/build.make CMakeFiles/Diagnostics.dir/include/red_detect/Diagnostics.cpp.o
+.PHONY : include/red_detect/Diagnostics.cpp.o
+
+include/red_detect/Diagnostics.i: include/red_detect/Diagnostics.cpp.i
+
+.PHONY : include/red_detect/Diagnostics.i
+
+# target to preprocess a source file
+include/red_detect/Diagnostics.cpp.i:
+	$(MAKE) -f CMakeFiles/Diagnostics.dir/build.make CMakeFiles/Diagnostics.dir/include/red_detect/Diagnostics.cpp.i
+.PHONY : include/red_detect/Diagnostics.cpp.i
+
+include/red_detect/Diagnostics.s: include/red_detect/Diagnostics.cpp.s
+
+.PHONY : include/red_detect/Diagnostics.s
+
+# target to generate assembly for a file
+include/red_detect/Diagnostics.cpp.s:
+	$(MAKE) -f CMakeFiles/Diagnostics.dir/build.make CMakeFiles/Diagnostics.dir/include/red_detect/Diagnostics.cpp.s
+.PHONY : include/red_detect/Diagnostics.cpp.s
 
 include/red_detect/NodeTools.o: include/red_detect/NodeTools.cpp.o
 
@@ -313,6 +366,33 @@ src/arraySubscriber_example.cpp.s:
 	$(MAKE) -f CMakeFiles/ArraySubscriberExample.dir/build.make CMakeFiles/ArraySubscriberExample.dir/src/arraySubscriber_example.cpp.s
 .PHONY : src/arraySubscriber_example.cpp.s
 
+src/cuda_cv.o: src/cuda_cv.cpp.o
+
+.PHONY : src/cuda_cv.o
+
+# target to build an object file
+src/cuda_cv.cpp.o:
+	$(MAKE) -f CMakeFiles/cudaCV.dir/build.make CMakeFiles/cudaCV.dir/src/cuda_cv.cpp.o
+.PHONY : src/cuda_cv.cpp.o
+
+src/cuda_cv.i: src/cuda_cv.cpp.i
+
+.PHONY : src/cuda_cv.i
+
+# target to preprocess a source file
+src/cuda_cv.cpp.i:
+	$(MAKE) -f CMakeFiles/cudaCV.dir/build.make CMakeFiles/cudaCV.dir/src/cuda_cv.cpp.i
+.PHONY : src/cuda_cv.cpp.i
+
+src/cuda_cv.s: src/cuda_cv.cpp.s
+
+.PHONY : src/cuda_cv.s
+
+# target to generate assembly for a file
+src/cuda_cv.cpp.s:
+	$(MAKE) -f CMakeFiles/cudaCV.dir/build.make CMakeFiles/cudaCV.dir/src/cuda_cv.cpp.s
+.PHONY : src/cuda_cv.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -322,15 +402,20 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... edit_cache"
+	@echo "... install/local"
+	@echo "... test"
+	@echo "... red_detect_uninstall"
 	@echo "... rebuild_cache"
 	@echo "... ArrayPublisherExample"
 	@echo "... uninstall"
 	@echo "... NodeTools"
+	@echo "... Diagnostics"
 	@echo "... ArraySubscriberExample"
-	@echo "... install/local"
-	@echo "... red_detect_uninstall"
-	@echo "... test"
+	@echo "... edit_cache"
+	@echo "... cudaCV"
+	@echo "... include/red_detect/Diagnostics.o"
+	@echo "... include/red_detect/Diagnostics.i"
+	@echo "... include/red_detect/Diagnostics.s"
 	@echo "... include/red_detect/NodeTools.o"
 	@echo "... include/red_detect/NodeTools.i"
 	@echo "... include/red_detect/NodeTools.s"
@@ -340,6 +425,9 @@ help:
 	@echo "... src/arraySubscriber_example.o"
 	@echo "... src/arraySubscriber_example.i"
 	@echo "... src/arraySubscriber_example.s"
+	@echo "... src/cuda_cv.o"
+	@echo "... src/cuda_cv.i"
+	@echo "... src/cuda_cv.s"
 .PHONY : help
 
 
