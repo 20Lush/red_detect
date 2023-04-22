@@ -1,2 +1,0 @@
-/usr/bin/ar qc libNodeTools.a  CMakeFiles/NodeTools.dir/include/red_detect/NodeTools.cpp.o
-/usr/bin/ranlib libNodeTools.a
